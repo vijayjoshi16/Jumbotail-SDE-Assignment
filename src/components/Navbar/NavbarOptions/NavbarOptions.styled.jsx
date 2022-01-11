@@ -9,6 +9,7 @@ export const OptionContainer = styled(Grid)`
 export const Option = styled.a`
   display: block;
   font-size: 1.2rem;
+  width: 100px;
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
