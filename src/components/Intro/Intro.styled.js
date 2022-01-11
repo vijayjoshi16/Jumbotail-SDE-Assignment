@@ -2,10 +2,7 @@ import { Grid } from "@material-ui/core";
 import styled from "styled-components";
 
 export const IntroContainer = styled(Grid)`
-  padding: 20px 10px;
-  max-width: 1260px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 80px 10px 40px;
 `;
 
 export const ImageIntro = styled.img`

@@ -6,6 +6,7 @@ export const NavbarContainer = styled(Grid)`
   color: white;
   padding: 15px 20px;
   text-align: left;
+  position: fixed;
 `;
 
 export const BrandName = styled(Grid)`
