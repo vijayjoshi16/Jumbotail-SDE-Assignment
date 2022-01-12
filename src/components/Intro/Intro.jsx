@@ -2,7 +2,6 @@ import { Grid } from "@material-ui/core";
 import {
   ExploreButton,
   ImageIntro,
-  IntroContainer,
   IntroDescription,
   IntroText,
   SearchButton,
@@ -11,7 +10,7 @@ import introImg from "../../img/intro-img.jpg";
 
 const Intro = () => {
   return (
-    <IntroContainer container>
+    <Grid container>
       <IntroText item xs={12} sm={12} md={6} lg={6}>
         <h1>Discover the world of books with the Book Search API</h1>
         <IntroDescription>
@@ -24,7 +23,7 @@ const Intro = () => {
       <Grid item xs={12} sm={12} md={6} lg={6}>
         <ImageIntro src={introImg} />
       </Grid>
-    </IntroContainer>
+    </Grid>
   );
 };
 

@@ -2,6 +2,7 @@ import { Grid } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import BookCard from "../BookCard/BookCard";
 import { ExploreContainer, SectionHeading } from "./Explore.styled";
+import loadingGIF from "../../img/loading-gif.gif";
 
 const Explore = () => {
   const [books, setBooks] = useState([]);
@@ -53,7 +54,7 @@ const Explore = () => {
           })}
         </>
       ) : (
-        <>Loading...</>
+        <img src={loadingGIF} />
       )}
     </ExploreContainer>
   );
