@@ -5,6 +5,7 @@ import Intro from "./components/Intro/Intro";
 import Explore from "./components/Explore/Explore";
 import Search from "./components/Search/Search";
 import DetailedCard from "./components/DetailedCard/DetailedCard";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -28,13 +29,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
-
-      <a href="https://www.freepik.com/vectors/school">
-        School vector created by pch.vector - www.freepik.com
-      </a>
-      <a href="https://www.freepik.com/vectors/business">
-        Business vector created by pch.vector - www.freepik.com
-      </a>
+      <Footer />
     </div>
   );
 }
