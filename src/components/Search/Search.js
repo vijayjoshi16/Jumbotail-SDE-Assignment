@@ -1,6 +1,6 @@
 import { Grid } from "@material-ui/core";
 import { useState } from "react";
-import searchImg from "../../img/search-img.jpg";
+import searchImg from "../../img/search-img.webp";
 import loadingGIF from "../../img/loading-gif.gif";
 import {
   SearchText,

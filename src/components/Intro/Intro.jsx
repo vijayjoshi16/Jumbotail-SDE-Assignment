@@ -6,7 +6,7 @@ import {
   IntroText,
   SearchButton,
 } from "./Intro.styled";
-import introImg from "../../img/intro-img.jpg";
+import introImg from "../../img/intro-img.webp";
 
 const Intro = () => {
   return (

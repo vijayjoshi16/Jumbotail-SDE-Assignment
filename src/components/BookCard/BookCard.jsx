@@ -5,7 +5,7 @@ import {
   CardImage,
   KnowMoreButton,
 } from "./BookCard.styles";
-import defaultPic from "../../img/default-book.jpg";
+import defaultPic from "../../img/default-book.webp";
 
 const BookCard = (props) => {
   const imageLink =
@@ -17,6 +17,11 @@ const BookCard = (props) => {
     props.data.volumeInfo.description !== undefined
       ? props.data.volumeInfo.description
       : "No Description available";
+
+  const handleClick = () => {
+    console.log(props.data);
+    localStorage.setItem("book_data", JSON.stringify(props.data));
+  };
 
   return (
     <Grid item xs={12} sm={6} md={4} lg={3}>
@@ -31,7 +36,7 @@ const BookCard = (props) => {
           </p>
           <p>Published at: {props.data.volumeInfo.publishedDate}</p>
         </BookInfo>
-        <KnowMoreButton>KNOW MORE</KnowMoreButton>
+        <KnowMoreButton onClick={handleClick}>KNOW MORE</KnowMoreButton>
       </CardContainer>
     </Grid>
   );
