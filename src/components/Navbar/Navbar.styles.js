@@ -9,9 +9,10 @@ export const NavbarContainer = styled(Grid)`
   position: fixed;
 `;
 
-export const BrandName = styled(Grid)`
+export const NameSpan = styled.span`
   font-size: 1.75rem;
   font-weight: 600;
+  cursor: pointer;
 `;
 
 export const Options = styled(Grid)`

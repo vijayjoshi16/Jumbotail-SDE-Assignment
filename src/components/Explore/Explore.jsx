@@ -12,7 +12,6 @@ const Explore = () => {
   useEffect(() => {
     const bookArray = [];
     defaultSearchQueries.forEach((query) => {
-      console.log(query);
       fetch("https://www.googleapis.com/books/v1/volumes?q=" + query, {
         method: "GET",
         headers: {
@@ -21,7 +20,6 @@ const Explore = () => {
       })
         .then((res) => res.json())
         .then((result) => {
-          console.log(result);
           bookArray.push({
             category: query,
             bookList: result.items,
@@ -34,7 +32,7 @@ const Explore = () => {
   }, []);
 
   return (
-    <ExploreContainer>
+    <ExploreContainer id="explore">
       <h1>EXPLORE</h1>
       {books.length !== 0 ? (
         <>

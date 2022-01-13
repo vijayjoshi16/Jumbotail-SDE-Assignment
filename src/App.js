@@ -9,9 +9,9 @@ import DetailedCard from "./components/DetailedCard/DetailedCard";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <div className="content_container">
-        <BrowserRouter>
+      <BrowserRouter>
+        <Navbar />
+        <div className="content_container">
           <Routes>
             <Route
               exact
@@ -26,8 +26,9 @@ function App() {
             <Route path="/search" element={<Search />} />
             <Route path="/details" element={<DetailedCard />} />
           </Routes>
-        </BrowserRouter>
-      </div>
+        </div>
+      </BrowserRouter>
+
       <a href="https://www.freepik.com/vectors/school">
         School vector created by pch.vector - www.freepik.com
       </a>

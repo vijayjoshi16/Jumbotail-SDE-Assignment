@@ -55,8 +55,9 @@ const DetailedCard = () => {
       ? []
       : volumeInfo.industryIdentifiers;
   const buyLink =
-    bookData.saleInfo === "undefined" ? "" : bookData.saleInfo.buyLink;
-  console.log(bookData);
+    bookData.saleInfo === undefined || bookData.saleInfo.buyLink === undefined
+      ? ""
+      : bookData.saleInfo.buyLink;
   return (
     <DetailedCardContianer>
       <BackgroundImage src={BackgroundImg} />

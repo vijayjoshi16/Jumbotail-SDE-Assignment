@@ -15,6 +15,8 @@ export const Option = styled.a`
   cursor: pointer;
   margin-top: ${(props) => (props.isSmall ? "30px" : "0px")};
   transition: all 0.5s ease;
+  text-decoration: none;
+  color:white;
   &:hover {
     background-color: white;
     color: #fa9746;

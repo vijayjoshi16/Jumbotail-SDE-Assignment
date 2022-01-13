@@ -6,8 +6,10 @@ import {
   KnowMoreButton,
 } from "./BookCard.styles";
 import defaultPic from "../../img/default-book.webp";
+import { useNavigate } from "react-router-dom";
 
 const BookCard = (props) => {
+  const navigate = useNavigate();
   const imageLink =
     props.data.volumeInfo.imageLinks !== undefined
       ? props.data.volumeInfo.imageLinks.thumbnail
@@ -19,8 +21,8 @@ const BookCard = (props) => {
       : "No Description available";
 
   const handleClick = () => {
-    console.log(props.data);
     localStorage.setItem("book_data", JSON.stringify(props.data));
+    navigate("/details");
   };
 
   return (
